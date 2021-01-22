@@ -52,18 +52,19 @@ function hotelCost(days) {
  var result = hotelCost(-1);
 
 //  megaFriend
-var arr = ["abir", "akash", "ashraful"];
-function megaFriend(names) {
-    if(names.length < 2){
+var friendsName = ["abir", "akash", "ashraful"];
+function megaFriend(friendsName) {
+    if(friendsName.length < 2){
         return "please input more names"
     }
     var max = [0];
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i].length > max.length) {
-            max = arr[i];
+    for (var i = 0; i < friendsName.length; i++) {
+        if (friendsName[i].length > max.length) {
+            max = friendsName[i];
         }
     }
     return max;
 }
-var result = megaFriend(arr);
+var result = megaFriend(friendsName);
+
 
